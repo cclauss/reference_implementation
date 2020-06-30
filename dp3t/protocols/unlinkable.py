@@ -32,7 +32,7 @@ from dp3t.config import RETENTION_PERIOD, EPOCH_LENGTH, NUM_EPOCHS_PER_DAY, LENG
 ### GLOBAL PROTOCOL CONSTANTS ###
 #################################
 
-#: FPR for CuckooFilter
+#: False Positive Rate for CuckooFilter
 CUCKOO_FPR = 2 ** -42
 
 
