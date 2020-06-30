@@ -41,7 +41,7 @@ from dp3t.config import (
 ### GLOBAL PROTOCOL CONSTANTS ###
 #################################
 
-#: Constant string "broadcast key" for domain seperation
+#: Constant string "broadcast key" for domain separation
 BROADCAST_KEY = "broadcast key".encode("ascii")
 
 #: Length of a batch (2 hours)
@@ -284,7 +284,7 @@ class ContactTracer:
         # Check if we are on the current day
         day_start = day_start_from_time(time)
         if day_start != self.start_of_today:
-            raise ValueError("Requested EphID not availavle. Did you call next_day()?")
+            raise ValueError("Requested EphID not available. Did you call next_day()?")
 
         # Compute the corresponding epoch within the day
         epoch = (int(time.timestamp()) - day_start) // (EPOCH_LENGTH * 60)
